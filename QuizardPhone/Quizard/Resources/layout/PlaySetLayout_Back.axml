@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <TextView
+        android:text="Question goes here"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/PlaySetQuestionTextView"
+        android:background="@drawable/flashcard"
+        android:textColor="#000000"
+        android:textSize="30dp" />
+    <Toolbar
+        android:background="?android:attr/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar1">
+        <TextView
+            android:text="Did you get it right?"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView1" />
+        <Button
+            android:text="Yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/playSetYesButton" />
+        <Button
+            android:text="No"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/playSetNoButton" />
+    </Toolbar>
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:text="Question goes here"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/PlaySetQuestionTextView"
+        android:background="@drawable/flashcard"
+        android:textColor="#000000"
+        android:textSize="30dp" />
+    <Button
+        android:text="View Answer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/PlaySetFront_ViewAnswerButton" />
+</LinearLayout>

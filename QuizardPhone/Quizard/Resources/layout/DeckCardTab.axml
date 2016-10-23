@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#02243c"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Toolbar
+        android:background="#71C42B"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cardTabToolbar">
+        <ImageButton
+            android:background="@null"
+            android:src="@drawable/home_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cardTabHomeButton" />
+        <ImageButton
+            android:background="@null"
+            android:src="@drawable/plusIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cardTabAddButton"
+            android:layout_marginLeft="540dp" />
+        <ImageButton
+            android:background="@null"
+            android:src="@drawable/play_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cardTabPlayButton"
+            android:layout_marginLeft="30dp" />
+    </Toolbar>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginBottom="5dp"
+        android:textColor="#000000"
+        android:textColorHint="#E6E6E6"
+        android:hint="Question goes here"
+        android:visibility="invisible"
+        android:background="@drawable/EditTextStyle"
+        android:id="@+id/deckAddCardQuestionEditTextID" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginBottom="5dp"
+        android:textColor="#000000"
+        android:textColorHint="#E6E6E6"
+        android:hint="Answer goes here"
+        android:visibility="invisible"
+        android:background="@drawable/EditTextStyle"
+        android:id="@+id/deckAddCardAnswerEditTextID" />
+    <Button
+        android:text="ADD"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:textColor="#E6E6E6"
+        android:textSize="15sp"
+        android:background="@drawable/ButtonStyle"
+        android:id="@+id/deckAddToDeckButtonID" />
+    <Button
+        android:text="DONE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:textColor="#E6E6E6"
+        android:textSize="15sp"
+        android:background="@drawable/ButtonStyle"
+        android:id="@+id/deckDoneAddCardButtonID" />
+    <ListView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/cardTabListView"
+        android:divider="#000000"
+        android:dividerHeight="5dp"
+        style="@style/ListViewStyle.Light" />
+</LinearLayout>

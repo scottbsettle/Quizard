@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <TextView
+        android:text="Study Set Complete!"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:id="@+id/ResultPageTitle"
+        android:gravity="center"
+        android:textColor="@android:color/background_light" />
+    <TextView
+        android:text="Your average was:"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:id="@+id/ResultAverageTitle" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="68.0dp"
+        android:id="@+id/linearLayout1">
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="75.5dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:id="@+id/ResultPercentage" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:id="@+id/ResultEmoji"
+            android:scaleType="fitCenter" />
+    </LinearLayout>
+    <TextView
+        android:text="Want to try again?"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="21.5dp"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:id="@+id/ResultRetryTitle" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/linearLayout3">
+        <ImageButton
+            android:src="@drawable/error"
+            android:layout_width="79.0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/ResultCancelButton"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter" />
+        <ImageButton
+            android:src="@drawable/success"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/ResultAcceptButton"
+            android:background="@android:color/transparent"
+            android:layout_weight="50"
+            android:scaleType="fitCenter" />
+    </LinearLayout>
+    <ImageView
+        android:src="@drawable/watchbackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/ResultBackGround"
+        android:background="@android:color/transparent"
+        android:scaleType="centerCrop" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout2" />
+</LinearLayout>

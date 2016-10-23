@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="100"
+    android:background="#01243B"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:id="@+id/loginViewLinearLayoutID">
+    <ImageView
+        android:background="@drawable/QuizardLogo"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="30"
+        android:layout_marginRight="130dp"
+        android:layout_marginBottom="50dp" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:layout_weight="5"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="200dp"
+        android:layout_marginRight="200dp"
+        android:singleLine="true"
+        android:textColor="#000000"
+        android:textColorHint="#C5C5C5"
+        android:hint="Username"
+        android:background="@drawable/EditTextStyle"
+        android:id="@+id/userLoginUsernameEditTextID" />
+    <EditText
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:layout_weight="5"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="200dp"
+        android:singleLine="true"
+        android:layout_marginRight="200dp"
+        android:textColor="#000000"
+        android:textColorHint="#C5C5C5"
+        android:hint="Password"
+        android:background="@drawable/EditTextStyle"
+        android:id="@+id/userLoginPasswordEditTextID" />
+    <CheckBox
+        android:text="Remember Me"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="192dp"
+        android:layout_marginRight="192dp"
+        android:textColor="#FFFFFF"
+        android:id="@+id/rememberMeCheckBoxID" />
+    <Button
+        android:text="Login"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:layout_marginLeft="150dp"
+        android:layout_marginRight="150dp"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:background="@drawable/ButtonStyle"
+        android:id="@+id/loginButtonID" />
+    <TextView
+        android:text="OR"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:gravity="center"
+        android:textColor="#FFFFFF" />
+    <Button
+        android:text="New to Quizard?"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:layout_marginLeft="150dp"
+        android:layout_marginRight="150dp"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:background="@drawable/ButtonStyle"
+        android:id="@+id/createAnAccountButtonID" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="25"
+        android:minWidth="25px"
+        android:minHeight="25px">
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:indeterminate="true"
+            android:visibility="invisible"
+            android:id="@+id/loginProgressBarID" />
+    </RelativeLayout>
+</LinearLayout>

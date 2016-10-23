@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#02243c"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+  <TextView
+      android:text="Question"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/textView1" />
+  <EditText
+      android:inputType="textMultiLine"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/QuestionEditText"
+      android:background="#e6e6e6" />
+  <TextView
+      android:text="Answer"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/textView2" />
+  <EditText
+      android:inputType="textMultiLine"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/editText2"
+      android:background="#e6e6e6" />
+  <Button
+      android:text="Save"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/DeckAddCardSaveButton" />
+  <Button
+      android:text="CANCEL"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/DeckAddCardCancelButton" />
+</LinearLayout>
